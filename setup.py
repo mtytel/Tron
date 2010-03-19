@@ -7,7 +7,7 @@ setup(
     author="Yelp",
     author_email="opensource@yelp.com",
     url="http://github.com/rhettg/Tron",
-    description='Job scheduling system',
+    description='Job scheduling and monitoring system',
     classifiers=[
         "Programming Language :: Python",
         "Operating System :: OS Independent",
@@ -18,9 +18,10 @@ setup(
         "Intended Audience :: System Administrators",
         "Development Status :: 3 - Alpha",
     ],
+	requires = ['twisted (>=8.2.0)'],
     packages=["tron", "tron.utils"],
 	scripts=['bin/trond', 'bin/tronview', 'bin/tronctl'],
-	datafiles=[('docs', ['docs/sample.yaml'])],
+	data_files=[('docs', ['docs/sample-config.yaml'])],
 	long_description="""\
 Tron is a job scheduling, running and monitoring package designed to replace Cron for complex job running requirements.
   - Centralized configuration for running jobs across multiple machines
