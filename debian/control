@@ -2,8 +2,9 @@ Source: tron
 Section: admin
 Priority: optional
 Maintainer: Rhett Garber <rhett@yelp.com>
-Build-Depends: debhelper (>=6.0.0), python-support (>= 0.6.5), cdbs (>= 0.4.51)
-Standards-Version: 3.7.3.0
+Build-Depends: debhelper (>= 6.0.4), python-support (>= 0.5.3), cdbs (>= 0.4.51), python-central (>= 0.5.6)
+XS-Python-Version: >=2.5
+Standards-Version: 3.7.2
 
 Package: tron
 Architecture: all

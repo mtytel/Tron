@@ -2,7 +2,7 @@ PYTHON=`which python`
 DESTDIR=/
 PROJECT=tron
 BUILDIR=$(CURDIR)/debian/$PROJECT
-VERSION=0.1.0
+VERSION=`$(PYTHON) setup.py --version`
 
 all:
 		@echo "make source - Create source package"
